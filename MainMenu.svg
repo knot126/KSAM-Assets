@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="MainMenu.svg"
+   inkscape:export-filename="/home/user/Development/Mediocre/MainMenu.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient16">
+      <stop
+         style="stop-color:#217844;stop-opacity:1"
+         offset="0"
+         id="stop12" />
+      <stop
+         style="stop-color:#37c871;stop-opacity:1"
+         offset="1"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient16"
+       id="linearGradient18"
+       x1="0.73293382"
+       y1="131.98727"
+       x2="0.73293382"
+       y2="0.3746317"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="250"
+     inkscape:cy="250"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:0.8;fill:url(#linearGradient18);stroke:none;stroke-width:0.618012"
+       id="path10"
+       r="65.83683"
+       cy="66.145836"
+       cx="66.145836" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Smash Hit';-inkscape-font-specification:'Smash Hit';fill:#ffffff;stroke-width:0.264583"
+       x="66.517906"
+       y="37.868481"
+       id="text40"><tspan
+         sodipodi:role="line"
+         id="tspan38"
+         x="66.517906"
+         y="37.868481"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.264583">mod created by</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Smash Hit';-inkscape-font-specification:'Smash Hit';fill:#ffffff;stroke-width:0.264583"
+       x="66.517906"
+       y="59.035152"
+       id="text44"><tspan
+         sodipodi:role="line"
+         id="tspan42"
+         x="66.517906"
+         y="59.035152"
+         style="font-size:16.9333px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.264583">Knot126</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Smash Hit';-inkscape-font-specification:'Smash Hit';fill:#ffffff;stroke-width:0.264583"
+       x="66.517906"
+       y="80.201813"
+       id="text48"><tspan
+         sodipodi:role="line"
+         id="tspan46"
+         x="66.517906"
+         y="80.201813"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.264583">with help from the</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Smash Hit';-inkscape-font-specification:'Smash Hit';fill:#ffffff;stroke-width:0.264583"
+       x="66.517906"
+       y="101.36847"
+       id="text52"><tspan
+         sodipodi:role="line"
+         id="tspan50"
+         x="66.517906"
+         y="101.36847"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.264583">modding community</tspan></text>
+  </g>
+</svg>
