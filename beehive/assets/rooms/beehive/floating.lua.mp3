@@ -1,0 +1,32 @@
+function init()
+    pEnd = mgGetBool("end", true)
+    
+	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
+	mgMusic("24") 
+	mgReverb(10.0, 10.0, 10.0)
+	mgEcho(0.1, 0.3, 0.7, 0.4) 
+    mgParticles("dustyfalling")
+
+    confSegment("beehive/floating/float0", 1)
+    confSegment("beehive/floating/float1", 0.8)
+    confSegment("beehive/floating/float1_alt", 0.2)
+    confSegment("beehive/floating/float2", 1)
+    confSegment("beehive/floating/float3", 1)
+	
+	l = 0
+	
+	local len = 220
+	while l < len do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)
+	end
+    
+    if pEnd then
+        l = l + mgSegment("beehive/floating/float_door", -l)
+    end
+
+	mgLength(l)
+end
+
+function tick()
+end

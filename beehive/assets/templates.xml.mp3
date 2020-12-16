@@ -1,0 +1,10 @@
+<templates>
+	<!-- BEEROOM -->
+	<template name="bee_glass">
+		<properties param0="color=1.14 0.86 0.23" />
+	</template>
+	
+	<template name="bee_st">
+		<properties param0="color=.5 .84 1" />
+	</template>
+</templates>

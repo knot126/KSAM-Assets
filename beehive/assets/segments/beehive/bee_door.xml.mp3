@@ -1,0 +1,24 @@
+<segment size="12 10 8" template="basic">
+    <decal pos="0.0 1.0 -7.0" hidden="0" tile="-2" color="1.12 0.87 0.0" size="1.0 1.0 0.0"/>
+    <obstacle pos="0.0 0.0 -7.5" hidden="0" type="doors/basic" template="bee_glass" param1="buttons=2"/>
+    
+    <water pos="0.0 -1.0 -4.0" hidden="0" size="12.0 4.0"/>
+    <obstacle pos="-8.0 0.0 -4.0" hidden="0" type="stone" param1="sizeY=10.0" param2="sizeZ=4.0" param3="nomask=true" param4="color=1.12 0.87 0.0"/>
+    <obstacle pos="8.0 0.0 -4.0" hidden="0" type="stone" param1="sizeY=10.0" param2="sizeZ=4.0" param3="nomask=true" param4="color=1.12 0.87 0.0"/>
+    <box size="0.1 10.0 4.0" pos="-7.5 0.0 -4.0" hidden="0" template="bee_glass"/>
+    <box size="0.1 10.0 4.0" pos="7.5 0.0 -4.0" hidden="0" template="bee_glass"/>
+    
+    <!-- Top of the door wall -->
+    <!-- Bottom of the door wall-->
+    <obstacle pos="0.0 -5.0 -7.5" hidden="0" type="stone" param1="sizeX=12.0" param2="sizeY=5.0" param3="nomask=true" param4="color=1.12 0.87 0.0"/>
+    <obstacle pos="0.0 7.0 -7.5" hidden="0" type="stone" param1="sizeX=12.0" param2="sizeY=5.0" param3="nomask=true" param4="color=1.12 0.87 0.0"/>
+    <box size="12.0 5.0 0.5" pos="0.0 7.0 -7.5" hidden="0" template="bee_glass"/>
+    <box size="12.0 5.0 0.5" pos="0.0 -5.0 -7.5" hidden="0" template="bee_glass"/>
+    
+    <!-- Sides of the door wall -->
+    <obstacle pos="-6.0 0.0 -7.5" hidden="0" type="stone" param1="sizeX=5.0" param2="sizeY=10.0" param3="nomask=true" param4="color=1.12 0.87 0.0"/>
+    <obstacle pos="6.0 0.0 -7.5" hidden="0" type="stone" param1="sizeX=5.0" param2="sizeY=10.0" param3="nomask=true" param4="color=1.12 0.87 0.0"/>
+    <box size="5.0 10.0 0.5" pos="-6.0 0.0 -7.5" hidden="0" template="bee_glass"/>
+    <box size="5.0 10.0 0.5" pos="6.0 0.0 -7.5" hidden="0" template="bee_glass"/>
+</segment>
+

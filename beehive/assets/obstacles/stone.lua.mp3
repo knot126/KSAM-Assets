@@ -1,0 +1,15 @@
+function init()
+   cr, cg, cb = mgGetColor("color", 0.25, 0.5, 0.75)
+   sizeX = mgGetFloat("sizeX", 0.5)
+   sizeY = mgGetFloat("sizeY", 0.5)
+   sizeZ = mgGetFloat("sizeZ", 0.5)
+   raycast = mgGetBool("raycast", false)
+   mgMaterial("steel")
+   mgColor(cr, cg, cb)
+   b = mgCreateBody(0, 0, 0)
+   mgStatic(1)
+   mgMask(0)
+   mgCreateBox(b, sizeX, sizeY, sizeZ)
+end
+function tick()
+end

@@ -1,0 +1,19 @@
+function init()
+    pStart = mgGetBool("start", true)
+    pEnd = mgGetBool("end", true)
+    
+	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
+	mgMusic("boss_in") 
+	mgReverb(10.0, 10.0, 10.0)
+	mgEcho(0.1, 0.3, 0.7, 0.4) 
+	
+	l = 0
+    l = l + mgSegment("beehive/boss/start")
+    l = l + mgSegment("beehive/boss/mid")
+    l = l + mgSegment("beehive/boss/end")
+
+	mgLength(l)
+end
+
+function tick()
+end

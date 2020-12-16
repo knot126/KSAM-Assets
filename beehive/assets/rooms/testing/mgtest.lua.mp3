@@ -1,0 +1,45 @@
+function init()
+	mgFogColor(1.25, .85, .5, -.7, -.1, .2)
+	mgMusic("25")
+	mgReverb(.3, 0.6, 0.2) 
+	mgEcho(0.3, 0.4, 0.7, 0.1)
+	mgParticles("lowrising")
+	
+    local length = 200
+    
+--     mgTexture("14")
+    mgColor(0.6, 0.4, 0.7)
+    mgBox(7, 0.5, length/2, 0, -5.5, -length/2)
+    mgBox(7, 0.5, length/2, 0, 6.5, -length/2)
+    mgBox(2, 0.5, length/2, -5.5, 5.5, -length/2)
+    mgBox(2, 0.5, length/2, 5.5, 5.5, -length/2)
+    mgBox(1, 5, length/2+0.5, -5.5, 0, -length/2)
+    mgBox(1, 5, length/2+0.5, 5.5, 0, -length/2)    
+    
+    for i = 0, length, 10 do
+        mgObstacle("pyramid", -1.0, 0.0, -i)
+    end
+    
+    for i = 0, length, 3 do
+        mgObstacle("scoretop", -1.0, 0.0, -i)
+    end
+    
+    for i = 0, length, 3 do
+        mgObstacle("scorediamond", 0.0, 0.0, -i)
+    end
+    
+    for i = 0, length, 3 do
+        mgObstacle("scoretop", 1.0, 0.0, -i)
+    end
+
+-- 	local targetLen = 100 
+-- 	while l < targetLen do
+-- 		s = nextSegment()
+-- 		l = l + mgSegment(s, -l)	
+-- 	end
+		
+	mgLength(length)
+end
+
+function tick()
+end

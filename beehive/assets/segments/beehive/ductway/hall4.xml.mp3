@@ -1,0 +1,19 @@
+<segment size="12 10 16" template="river">
+    <obstacle pos="3.0 0.0 -8.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=6.0" param2="sizeZ=8.0" param3="nomask=true"/>
+    <obstacle pos="-3.0 0.0 -8.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=6.0" param2="sizeZ=8.0" param3="nomask=true"/>
+    <obstacle pos="0.0 -1.0 -8.0" hidden="0" type="stone" template="bee_glass" param1="sizeX=6.0" param2="sizeZ=8.0" param3="nomask=true"/>
+    <obstacle pos="0.0 4.0 -8.0" hidden="0" type="stone" template="bee_glass" param1="sizeX=6.0" param2="sizeZ=8.0" param3="nomask=true"/>
+    <obstacle pos="1.5 0.0 -11.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=1.5" param2="sizeZ=0.5" param3="nomask=true"/>
+    <obstacle pos="-1.5 0.0 -5.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=0.5" param2="sizeZ=0.5" param3="nomask=true"/>
+    
+    <box size="12.0 0.1 8.0" pos="0.0 -0.5 -8.0" hidden="0" template="bee_glass"/>
+    <box size="12.0 0.1 8.0" pos="0.0 3.5 -8.0" hidden="0" template="bee_glass"/>
+    <box size="0.1 10.0 8.0" pos="2.5 0.0 -8.0" hidden="0" template="bee_glass"/>
+    <box size="0.1 10.0 8.0" pos="-2.5 0.0 -8.0" hidden="0" template="bee_glass"/>
+    <box size="0.5 1.5 0.5" pos="1.5 0.0 -11.0" hidden="0" template="bee_glass"/>
+    <box size="0.5 0.5 0.5" pos="-1.5 0.0 -5.0" hidden="0" template="bee_glass"/>
+
+    <powerup pos="1.5 2.0 -11.0" hidden="0" type="slowmotion"/>
+    <obstacle pos="-1.5 0.5 -5.0" hidden="0" type="scoretop" template="night_st"/>
+</segment>
+

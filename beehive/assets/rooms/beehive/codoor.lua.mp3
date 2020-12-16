@@ -1,0 +1,38 @@
+function init()
+    pStart = mgGetBool("start", true)
+    pEnd = mgGetBool("end", true)
+    
+	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
+	mgMusic("18") 
+	mgReverb(10.0, 10.0, 10.0)
+	mgEcho(0.1, 0.3, 0.7, 0.4) 
+    mgParticles("bubbles")
+
+    confSegment("beehive/ductway/hall0", 1)
+    confSegment("beehive/ductway/hall1", 1)
+    confSegment("beehive/ductway/hall2", 1)
+    confSegment("beehive/ductway/hall3", 0.7)
+    confSegment("beehive/ductway/hall4", 0.3)
+    confSegment("beehive/ductway/hall5", 1)
+	
+	l = 0
+    
+    if pStart then
+        l = l + mgSegment("beehive/ductway/filler", -l)
+    end
+	
+	local len = 220
+	while l < len do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)
+	end
+    
+    if pEnd then
+        l = l + mgSegment("beehive/ductway/door", -l)
+    end
+
+	mgLength(l)
+end
+
+function tick()
+end

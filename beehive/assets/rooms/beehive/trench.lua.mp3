@@ -1,0 +1,36 @@
+function init()
+	pStart = mgGetBool("start", true)
+	pEnd = mgGetBool("end", true)
+	
+	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
+	mgMusic("28")
+	mgParticles("lowrising")
+	
+	confSegment("beehive/trench/16_0", 1)
+	confSegment("beehive/trench/16_1", 1)
+	confSegment("beehive/trench/16_2", 1)
+	confSegment("beehive/trench/16_3", 1)
+	confSegment("beehive/trench/16_4", 1)
+	
+	l = 0
+	
+	local len = 320
+	
+	if pStart then
+		l = l + mgSegment("beehive/trench/start", -l)
+	end
+	
+	while l < len do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)
+	end
+	
+	if pEnd then
+		l = l + mgSegment("beehive/trench/door", -l)
+	end
+	
+	mgLength(l)
+end
+
+function tick()
+end

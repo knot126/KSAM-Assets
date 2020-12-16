@@ -1,0 +1,12 @@
+{
+    "packageName": "knot126.beehive",
+    "packageTitle": {
+        "en": "Beehive Stages"
+    },
+    "packageVersion": 30000,
+    "packageCreator": "Knot126",
+    "packageDate": "2020-11-05T00:04:39+00:00",
+    "description": {
+        "en": "Beehive was the first custom room for Smash Hit, started as an \"expriment.\" It currently contains five new rooms and an exprimental boss room."
+    }
+}

@@ -1,0 +1,14 @@
+<segment size="12 10 16" template="river">
+    <obstacle pos="3.5 0.0 -12.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=10.0" param2="nomask=true"/>
+    <obstacle pos="-3.5 0.0 -12.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=10.0" param2="nomask=true"/>
+    <box size="0.5 10.0 0.5" pos="3.5 0.0 -12.0" hidden="0" template="bee_glass"/>
+    <box size="0.5 10.0 0.5" pos="-3.5 0.0 -12.0" hidden="0" template="bee_glass"/>
+    
+    <obstacle pos="3.8 0.0 -5.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=10.0" param2="nomask=true"/>
+    <obstacle pos="-3.2 0.0 -5.0" hidden="0" type="stone" template="bee_glass" param1="sizeY=10.0" param2="nomask=true"/>
+    <box size="0.5 10.0 0.5" pos="3.8 0.0 -5.0" hidden="0" template="bee_glass"/>
+    <box size="0.5 10.0 0.5" pos="-3.2 0.0 -5.0" hidden="0" template="bee_glass"/>
+
+    <obstacle pos="0.12 -0.32 -11.75" hidden="0" type="suspendwindow" template="bee_glass" param1="plate=false" param2="thickness=0.045" param3="width=2.4" param2="strength=0.25"/>
+</segment>
+

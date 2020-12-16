@@ -1,0 +1,14 @@
+<segment size="12 10 16" template="basic">
+	<obstacle pos="0.0 3.0 10.0" hidden="0" type="tree" template="night_glass"/> <!-- X: Is Left/Right; Y: Is Up/Down; Z: Is Forwards/Backwards; where X Y Z -->
+	<obstacle pos="0.0 3.0 5.0" hidden="0" type="tree" template="night_glass"/>
+<!--     <obstacle pos="0.0 0.0 0.0" hidden="0" type="scoretop"/> -->
+    <obstacle pos="1.0 0.0 15.0" hidden="0" type="scoretop" template="night_st"/> 
+	<obstacle pos="-1.0 0.0 15.0" hidden="0" type="scoretop" template="night_st"/>
+	<obstacle pos="0.0 2.0 15.0" hidden="0" type="scorediamond" template="night_st"/>
+<!-- 	<obstacle pos="0.0 -2.0 15.0" hidden="0" type="scorediamond" template="night_st"/> -->
+<!--     <obstacle pos="0.0 0.0 15.0" hidden="0" type="scoretop" template="night_st"/> -->
+<!-- 	<box size="0.5 1.0 0.5" pos="1.5 1.125 -39.5" hidden="0" template="basic"/> -->
+	<box size="12.0 0.1 16.0" pos="0.0 0.0 0.0" hidden="0" template="night_glass"/>
+    <decal pos="0.0 0.0 0.0" hiddern="0" tile="15" size="1.0 1.0" rot="0 0 3.14" />
+</segment>
+
