@@ -1,0 +1,38 @@
+function init()
+	pStart = mgGetBool("start", true)
+	pEnd = mgGetBool("end", true)
+	
+	mgMusic("27")
+	mgReverb(0.2, 0.8, 0.3)
+	mgEcho(0.3, 0.2, 0.5, 0.5)
+	mgFogColor(0.83, 0.96, 1.0, 0.37, 0.73, 0.82)
+	mgParticles("bubbles")
+	mgGravity(0.65)
+	
+	confSegment("sky/sky0/16_0", 1)
+	confSegment("sky/sky0/16_1", 1)
+	confSegment("sky/sky0/16_2", 1)
+	confSegment("sky/sky0/16_3", 1)
+	confSegment("sky/sky0/16_4", 1)
+	
+	l = 0
+	
+	if pStart then
+		l = l + mgSegment("sky/sky0/start", -l)	
+	end
+	
+	local targetLen = 230
+	while l < targetLen do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)
+	end
+	
+	if pEnd then
+		l = l + mgSegment("sky/sky0/door", -l)	
+	end
+	
+	mgLength(l)
+end
+
+function tick()
+end
