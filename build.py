@@ -26,10 +26,14 @@ def main(dest):
 	os.mkdir("build", mode = 0o755)
 	shutil.copytree(cwd + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
 	
-	print(" → Baking PNG files into MTX files...")
+	print(" → Generating textures and images...")
+	
+	for i in config["Textures"]["files"].split(" "):
+		os.mkdir("build/assets/" + i, mode = 0o755)
+	
 	for i in pngfiles:
-		filein = i + ".png"
-		fileout = "build/" + i + ".png.mtx.mp3"
+		filein = "textures/" + i + ".png"
+		fileout = "build/assets/" + i + ".png.mtx.mp3"
 		print("   → Baking", filein, "to", fileout, "...")
 		mtx.bakeMtxFromPng(filein, fileout)
 	
