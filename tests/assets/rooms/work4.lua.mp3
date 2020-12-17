@@ -1,0 +1,23 @@
+function init()
+	pStart = mgGetBool("start", true)
+	pEnd = mgGetBool("end", true)
+	
+	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
+	mgMusic("0")
+	
+	confSegment("basic/16_0", 1)
+	
+	l = 0
+	
+	local len = 200
+	
+	while l < len do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)
+	end
+	
+	mgLength(l)
+end
+
+function tick()
+end
