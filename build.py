@@ -17,17 +17,21 @@ def loadConfig(name):
 	config.read(name);
 
 def main(dest):
+	# Load config
 	loadConfig("build.ini")
 	
 	pngfiles = config["Textures"]["files"].split(" ")
 	cwd = os.getcwd()
 	
+	# Copy the base assets folder (requirement should be obsolete)
 	print(" → Copying assets to new directory...")
-	os.mkdir("build", mode = 0o755)
+	os.mkdir("build", mode = 0o755) # TODO: Make the entire APK folder structure here...
 	shutil.copytree(cwd + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
 	
+	# Generate baked images
 	print(" → Generating textures and images...")
 	
+	# TODO: Remove needing Textures:dirs setting
 	for i in config["Textures"]["dirs"].split(" "):
 		os.mkdir("build/assets/" + i, mode = 0o755)
 	
@@ -37,6 +41,7 @@ def main(dest):
 		print("   → Baking", filein, "to", fileout, "...")
 		mtx.bakeMtxFromPng(filein, fileout)
 	
+	# Install packages
 	packages = config["General"]["packages"].split(" ")
 	print(" → Installing", len(packages), "package(s)...")
 	
@@ -48,9 +53,11 @@ def main(dest):
 		print("   → Installing package", package_info["packageName"], "version", package_info["packageVersion"], "...")
 		shutil.copytree(cwd + "/" + p + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
 	
+	# Overlay the files of the APK
 	print(" → Copying files over APK's files...")
 	shutil.copytree(cwd + "/build/assets", dest + "/assets", dirs_exist_ok = True)
 	
+	# Cleanup
 	if (not config["General"].getboolean("keepAssets")):
 		print(" → Removing temporary build tree...")
 		shutil.rmtree(cwd + "/build")
