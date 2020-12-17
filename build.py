@@ -28,7 +28,7 @@ def main(dest):
 	
 	print(" → Generating textures and images...")
 	
-	for i in config["Textures"]["files"].split(" "):
+	for i in config["Textures"]["dirs"].split(" "):
 		os.mkdir("build/assets/" + i, mode = 0o755)
 	
 	for i in pngfiles:
