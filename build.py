@@ -7,6 +7,7 @@ Usage: python3 build.py [dest location]
 import sys
 import os
 import shutil
+import json
 import util.mtxtool as mtx
 import configparser as cp
 
@@ -31,6 +32,17 @@ def main(dest):
 		fileout = "build/" + i + ".png.mtx.mp3"
 		print("   → Baking", filein, "to", fileout, "...")
 		mtx.bakeMtxFromPng(filein, fileout)
+	
+	packages = config["General"]["packages"].split(" ")
+	print(" → Installing", len(packages), "package(s)...")
+	
+	for p in packages:
+		f = open(p + "/package.json", "r")
+		package_info = json.load(f)
+		f.close();
+		
+		print("   → Installing package", package_info["packageName"], "version", package_info["packageVersion"], "...")
+		shutil.copytree(cwd + "/" + p + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
 	
 	print(" → Copying files over APK's files...")
 	shutil.copytree(cwd + "/build/assets", dest + "/assets", dirs_exist_ok = True)
