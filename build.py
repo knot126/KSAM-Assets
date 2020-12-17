@@ -5,6 +5,7 @@ Usage: python3 build.py [dest location]
 """
 
 import sys
+import os
 import shutil
 import util.mtxtool as mtx
 import configparser as cp
@@ -12,16 +13,36 @@ import configparser as cp
 config = cp.ConfigParser()
 
 def loadConfig(name):
-    config.read()
+	config.read(name);
 
 def main(dest):
-    shutil.copytree("./assets", dest + "/assets", dirs_exist_ok = True);
-
-    for i in pngfiles:
-        mtx.bakeMtxFromPng(filein, fileout);
-    
-
+	loadConfig("build.ini")
+	
+	pngfiles = config["Textures"]["files"].split(" ")
+	cwd = os.getcwd()
+	
+	print(" → Copying assets to new directory...")
+	os.mkdir("build", mode = 0o755)
+	shutil.copytree(cwd + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
+	
+	print(" → Baking PNG files into MTX files...")
+	for i in pngfiles:
+		filein = i + ".png"
+		fileout = "build/" + i + ".png.mtx.mp3"
+		print("   → Baking", filein, "to", fileout, "...")
+		mtx.bakeMtxFromPng(filein, fileout)
+	
+	print(" → Copying files over APK's files...")
+	shutil.copytree(cwd + "/build/assets", dest + "/assets", dirs_exist_ok = True)
+	
+	if (not config["General"].getboolean("keepAssets")):
+		print(" → Removing temporary build tree...")
+		shutil.rmtree(cwd + "/build")
+	else:
+		print(" → Skip deleting temporary assets...")
+	
+	print(" → Build completed successfully!")
+	return 0
 
 if (__name__ == "__main__"):
-    dirname = sys.argv[0];
-    main(dirname);
+	sys.exit(main(sys.argv[1]))
