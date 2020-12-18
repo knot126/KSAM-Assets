@@ -6,6 +6,8 @@ function init()
 	mgMusic("0")
 	
 	confSegment("basic/16_0", 1)
+	confSegment("basic/16_1", 1)
+	confSegment("basic/16_2", 1)
 	
 	l = 0
 	
