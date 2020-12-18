@@ -1,0 +1,12 @@
+{
+    "packageName": "knot126.ksam.main",
+    "packageTitle": {
+        "en": "KSAM Main Package"
+    },
+    "packageVersion": 10400,
+    "packageCreator": "Knot126",
+    "packageDate": "2020-12-18T13:47:36+00:00",
+    "description": {
+        "en": "This is the main package for KSAM which contains all files that need to be overridden. This package should be installed LAST on the list!"
+    }
+}

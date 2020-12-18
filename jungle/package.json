@@ -1,0 +1,12 @@
+{
+    "packageName": "knot126.jungle",
+    "packageTitle": {
+        "en": "Jungle Stages"
+    },
+    "packageVersion": 10000,
+    "packageCreator": "Knot126",
+    "packageDate": "2020-12-18T13:47:36+00:00",
+    "description": {
+        "en": "Jungle is the second major stage by Knot126. Originially called \"sky\", jungle features stages inspired by Checkpoint 5."
+    }
+}

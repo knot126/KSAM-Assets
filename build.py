@@ -13,27 +13,37 @@ import configparser as cp
 
 config = cp.ConfigParser()
 
-def loadConfig(name):
-	config.read(name);
-
 def main(dest):
 	# Load config
-	loadConfig("build.ini")
+	config.read("build.ini")
 	
 	pngfiles = config["Textures"]["files"].split(" ")
 	cwd = os.getcwd()
 	
-	# Copy the base assets folder (requirement should be obsolete)
-	print(" → Copying assets to new directory...")
-	os.mkdir("build", mode = 0o755) # TODO: Make the entire APK folder structure here...
-	shutil.copytree(cwd + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
+	# Create folders for the entire APK structure
+	print(" → Creating folders for build...")
+	
+	permmode = 0o755
+	
+	os.mkdir("build", mode=permmode)
+	os.mkdir("build/assets", mode=permmode)
+	os.mkdir("build/assets/about", mode=permmode)
+	os.mkdir("build/assets/effects", mode=permmode)
+	os.mkdir("build/assets/fonts", mode=permmode)
+	os.mkdir("build/assets/gfx", mode=permmode)
+	os.mkdir("build/assets/hud", mode=permmode)
+	os.mkdir("build/assets/levels", mode=permmode)
+	os.mkdir("build/assets/menu", mode=permmode)
+	os.mkdir("build/assets/meshes", mode=permmode)
+	os.mkdir("build/assets/music", mode=permmode)
+	os.mkdir("build/assets/obstacles", mode=permmode)
+	os.mkdir("build/assets/rooms", mode=permmode)
+	os.mkdir("build/assets/segments", mode=permmode)
+	os.mkdir("build/assets/shaders", mode=permmode)
+	os.mkdir("build/assets/snd", mode=permmode)
 	
 	# Generate baked images
 	print(" → Generating textures and images...")
-	
-	# TODO: Remove needing Textures:dirs setting
-	for i in config["Textures"]["dirs"].split(" "):
-		os.mkdir("build/assets/" + i, mode = 0o755)
 	
 	for i in pngfiles:
 		filein = "textures/" + i + ".png"
@@ -54,15 +64,13 @@ def main(dest):
 		shutil.copytree(cwd + "/" + p + "/assets", cwd + "/build/assets", dirs_exist_ok = True)
 	
 	# Overlay the files of the APK
-	print(" → Copying files over APK's files...")
+	print(" → Copying new files to APK...")
 	shutil.copytree(cwd + "/build/assets", dest + "/assets", dirs_exist_ok = True)
 	
 	# Cleanup
 	if (not config["General"].getboolean("keepAssets")):
 		print(" → Removing temporary build tree...")
 		shutil.rmtree(cwd + "/build")
-	else:
-		print(" → Skip deleting temporary assets...")
 	
 	print(" → Build completed successfully!")
 	return 0
