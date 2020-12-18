@@ -10,7 +10,7 @@
     <box size="0.1 10.0 8.0" pos="-2.5 0.0 -8.0" hidden="0" template="bee_glass"/>
 
     <obstacle pos="-2.5 1.3 -4.0" hidden="0" type="laser" template="bee_glass" param1="beams=3" param2="move=1" param3="speed=0.25" param4="offset=2.0"/>
-    <obstacle pos="0.0 0.5 -8.0" hidden="0" type="scorediamond" template="night_st"/>
+    <obstacle pos="0.0 0.5 -8.0" hidden="0" type="scorediamond" template="bee_st"/>
     <obstacle pos="-2.5 1.3 -12.0" hidden="0" type="laser" template="bee_glass" param1="beams=3" param2="move=1" param3="speed=0.25" param4="offset=2.0"/>
 </segment>
 

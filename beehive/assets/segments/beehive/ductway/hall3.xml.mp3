@@ -14,7 +14,7 @@
     <box size="0.5 10.0 0.5" pos="-2.0 0.0 -12.0" hidden="0" template="bee_glass"/>
     
     <obstacle pos="0.0 1.0 -5.0" hidden="0" type="bar" template="bee_glass" param1="move=1" param2="offset=1" param3="speed=0.2"/>
-    <obstacle pos="1.5 3.0 -12.0" hidden="0" type="scoretop" template="night_st" rot="0.0 0.0 1.57"/>
-    <obstacle pos="-1.5 0.0 -12.0" hidden="0" type="scoretop" template="night_st" rot="0.0 0.0 4.71"/>
+    <obstacle pos="1.5 3.0 -12.0" hidden="0" type="scoretop" template="bee_st" rot="0.0 0.0 1.57"/>
+    <obstacle pos="-1.5 0.0 -12.0" hidden="0" type="scoretop" template="bee_st" rot="0.0 0.0 4.71"/>
 </segment>
 
