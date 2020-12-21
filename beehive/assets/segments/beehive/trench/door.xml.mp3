@@ -1,36 +1,37 @@
+<!-- Exported with blender tools -->
 <segment size="12.0 10.0 16.0" template="bee_glass">
-	<box hidden="0" pos="0.0 -1.5 -8.0" size="4.0 0.5 8.0" />
-		<obstacle param0="sizeX=4.0" param1="sizeY=0.5" param2="sizeZ=8.0" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="0.0 -1.5 -8.0" type="stone" />
-	<box hidden="0" pos="-3.5 3.0 -8.0" size="0.5 4.0 8.0" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=4.0" param2="sizeZ=8.0" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="-3.5 3.0 -8.0" type="stone" />
-	<box hidden="0" pos="3.5 3.0 -8.0" size="0.5 4.0 8.0" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=4.0" param2="sizeZ=8.0" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="3.5 3.0 -8.0" type="stone" />
-	<box hidden="0" pos="1.0 -0.949999988079071 -8.0" size="0.5 0.05000000074505806 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="1.0 -0.949999988079071 -8.0" type="stone" />
-	<box hidden="0" pos="-1.0 -0.949999988079071 -4.0" size="0.5 0.05000000074505806 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="-1.0 -0.949999988079071 -4.0" type="stone" />
-	<box hidden="0" pos="-2.5 -0.949999988079071 -6.0" size="0.5 0.05000000074505806 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="-2.5 -0.949999988079071 -6.0" type="stone" />
-	<box hidden="0" pos="0.5 -0.949999988079071 -12.0" size="0.5 0.05000000074505806 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="0.5 -0.949999988079071 -12.0" type="stone" />
-	<box hidden="0" pos="1.5 -0.75 -4.0" size="0.5 0.25 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.25" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="1.5 -0.75 -4.0" type="stone" />
-	<box hidden="0" pos="2.5 -0.949999988079071 -10.0" size="0.5 0.05000000074505806 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="2.5 -0.949999988079071 -10.0" type="stone" />
-	<box hidden="0" pos="-1.0 -0.949999988079071 -2.0" size="0.5 0.05000000074505806 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="-1.0 -0.949999988079071 -2.0" type="stone" />
-	<box hidden="0" pos="-1.5 -0.75 -10.0" size="0.5 0.25 0.5" />
-		<obstacle param0="sizeX=0.5" param1="sizeY=0.25" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="-1.5 -0.75 -10.0" type="stone" />
-	<box hidden="0" pos="0.0 -0.5 -15.5" size="3.0 0.5 0.5" />
-		<obstacle param0="sizeX=3.0" param1="sizeY=0.5" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="0.0 -0.5 -15.5" type="stone" />
-	<box hidden="0" pos="0.0 4.5 -15.5" size="3.0 2.5 0.5" />
-		<obstacle param0="sizeX=3.0" param1="sizeY=2.5" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="0.0 4.5 -15.5" type="stone" />
-	<box hidden="0" pos="-2.0 1.0 -15.5" size="1.0 1.0 0.5" />
-		<obstacle param0="sizeX=1.0" param1="sizeY=1.0" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="-2.0 1.0 -15.5" type="stone" />
-	<box hidden="0" pos="2.0 1.0 -15.5" size="1.0 1.0 0.5" />
-		<obstacle param0="sizeX=1.0" param1="sizeY=1.0" param2="sizeZ=0.5" param3="color=1.1200000047683716 0.8700000047683716 0.0" pos="2.0 1.0 -15.5" type="stone" />
-	<obstacle hidden="0" param1="buttons=2" pos="0.0 0.0 -15.5" template="bee_st" type="doors/basic" />
-	<decal color="1.1200000047683716 0.8700000047683716 0.0 1.0" hidden="0" pos="0.0 1.0 -15.199999809265137" size="1.0 1.0" tile="-2" />
-	<obstacle hidden="0" pos="-1.5 -0.5 -10.0" template="bee_st" type="scoretop" />
-	<obstacle hidden="0" pos="1.5 -0.5 -4.0" template="bee_st" type="scoretop" />
-	</segment>
+	<box pos="0.0 -1.5 -8.0" hidden="0" size="4.0 0.5 8.0" />
+		<obstacle pos="0.0 -1.5 -8.0" type="stone" param0="sizeX=4.0" param1="sizeY=0.5" param2="sizeZ=8.0" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="-3.5 3.0 -8.0" hidden="0" size="0.5 4.0 8.0" />
+		<obstacle pos="-3.5 3.0 -8.0" type="stone" param0="sizeX=0.5" param1="sizeY=4.0" param2="sizeZ=8.0" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="3.5 3.0 -8.0" hidden="0" size="0.5 4.0 8.0" />
+		<obstacle pos="3.5 3.0 -8.0" type="stone" param0="sizeX=0.5" param1="sizeY=4.0" param2="sizeZ=8.0" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="1.0 -0.949999988079071 -8.0" hidden="0" size="0.5 0.05000000074505806 0.5" />
+		<obstacle pos="1.0 -0.949999988079071 -8.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="-1.0 -0.949999988079071 -4.0" hidden="0" size="0.5 0.05000000074505806 0.5" />
+		<obstacle pos="-1.0 -0.949999988079071 -4.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="-2.5 -0.949999988079071 -6.0" hidden="0" size="0.5 0.05000000074505806 0.5" />
+		<obstacle pos="-2.5 -0.949999988079071 -6.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="0.5 -0.949999988079071 -12.0" hidden="0" size="0.5 0.05000000074505806 0.5" />
+		<obstacle pos="0.5 -0.949999988079071 -12.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="1.5 -0.75 -4.0" hidden="0" size="0.5 0.25 0.5" />
+		<obstacle pos="1.5 -0.75 -4.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.25" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="2.5 -0.949999988079071 -10.0" hidden="0" size="0.5 0.05000000074505806 0.5" />
+		<obstacle pos="2.5 -0.949999988079071 -10.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="-1.0 -0.949999988079071 -2.0" hidden="0" size="0.5 0.05000000074505806 0.5" />
+		<obstacle pos="-1.0 -0.949999988079071 -2.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.05000000074505806" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="-1.5 -0.75 -10.0" hidden="0" size="0.5 0.25 0.5" />
+		<obstacle pos="-1.5 -0.75 -10.0" type="stone" param0="sizeX=0.5" param1="sizeY=0.25" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="0.0 -0.5 -15.5" hidden="0" size="3.0 0.5 0.5" />
+		<obstacle pos="0.0 -0.5 -15.5" type="stone" param0="sizeX=3.0" param1="sizeY=0.5" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="0.0 4.5 -15.5" hidden="0" size="3.0 2.5 0.5" />
+		<obstacle pos="0.0 4.5 -15.5" type="stone" param0="sizeX=3.0" param1="sizeY=2.5" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="-2.0 1.0 -15.5" hidden="0" size="1.0 1.0 0.5" />
+		<obstacle pos="-2.0 1.0 -15.5" type="stone" param0="sizeX=1.0" param1="sizeY=1.0" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<box pos="2.0 1.0 -15.5" hidden="0" size="1.0 1.0 0.5" />
+		<obstacle pos="2.0 1.0 -15.5" type="stone" param0="sizeX=1.0" param1="sizeY=1.0" param2="sizeZ=0.5" IMPORT_IGNORE="STONEHACK_IGNORE" param3="color=1.1200000047683716 0.8700000047683716 0.0" />
+	<obstacle pos="0.0 0.0 -15.5" type="doors/basic" hidden="0" template="bee_st" param1="buttons=2" />
+	<decal pos="0.0 1.0 -15.199999809265137" hidden="0" template="bee_st" tile="-2" size="1.0 1.0" color="1.1200000047683716 0.8700000047683716 0.0 1.0" />
+	<obstacle pos="-1.5 -0.5 -10.0" type="scoretop" hidden="0" template="bee_st" />
+	<obstacle pos="1.5 -0.5 -4.0" type="scoretop" hidden="0" template="bee_st" />
+</segment>
