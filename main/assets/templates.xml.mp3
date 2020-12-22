@@ -202,4 +202,9 @@
 	<!-- BEEROOM -->
 	<template name="bee_glass">         <properties param0="color=1.14 0.86 0.23" /></template>
 	<template name="bee_st">            <properties param0="color=.5 .84 1" /></template>
+	
+	<!-- FOREST -->
+	<template name="sky_glass">			<properties param0="color=.6 .65 .65"/></template>
+	<template name="sky_st">			<properties param0="color=.6 .65 .65"/></template>
+	<template name="sky_burning">		<properties param0="color=1.2 0.3 0.1"/></template>
 </templates>

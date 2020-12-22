@@ -3,14 +3,15 @@ function init()
 	pEnd = mgGetBool("end", true)
 	
 	mgMusic("33")
-	mgReverb(0.2, 0.8, 0.3)
+	mgReverb(0.4, 1.0, 0.5)
 	mgEcho(0.3, 0.2, 0.5, 0.5)
-	mgFogColor(0.83, 0.96, 1.0, 0.37, 0.73, 0.82)
-	mgGravity(0.65)
+	mgFogColor(0.9882352941176471, 0.4666666666666667, 0.00784313725490196,
+	           0.8196078431372549, 0.2627450980392157, 0.00784313725490196)
 	
 	confSegment("jungle/burned/16_0", 1)
 	confSegment("jungle/burned/16_1", 1)
 	confSegment("jungle/burned/16_2", 1)
+	confSegment("jungle/burned/16_3", 1)
 	
 	l = 0
 	
@@ -18,7 +19,7 @@ function init()
 		l = l + mgSegment("jungle/burned/start", -l)	
 	end
 	
-	local targetLen = 270
+	local targetLen = 280
 	while l < targetLen do
 		s = nextSegment()
 		l = l + mgSegment(s, -l)
