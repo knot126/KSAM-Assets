@@ -43,13 +43,15 @@ def main(dest):
 	os.mkdir("build/assets/snd", mode=permmode)
 	
 	# Generate baked images
-	print(" → Generating textures and images...")
-	
-	for i in pngfiles:
-		filein = "textures/" + i + ".png"
-		fileout = "build/assets/" + i + ".png.mtx.mp3"
-		print("   → Baking", filein, "to", fileout, "...")
-		mtx.bakeMtxFromPng(filein, fileout)
+	if (config["Textures"].getboolean("enable")):
+		# TODO: This needs to be redone!
+		print(" → Generating textures and images...")
+		
+		for i in pngfiles:
+			filein = "textures/" + i + ".png"
+			fileout = "build/assets/" + i + ".png.mtx.mp3"
+			print("   → Baking", filein, "to", fileout, "...")
+			mtx.bakeMtxFromPng(filein, fileout)
 	
 	# Install packages
 	packages = config["General"]["packages"].split(" ")
