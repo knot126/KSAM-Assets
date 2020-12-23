@@ -1,7 +1,7 @@
 <game>
 	<levels>
-		<level name="sky"/>
 		<level name="beehive"/>
+		<level name="sky"/>
 		<level name="gen_e"/>
 		<level name="gen_e"/>
 		<level name="gen_e"/>

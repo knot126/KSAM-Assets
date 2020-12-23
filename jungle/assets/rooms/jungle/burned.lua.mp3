@@ -12,6 +12,7 @@ function init()
 	confSegment("jungle/burned/16_1", 1)
 	confSegment("jungle/burned/16_2", 1)
 	confSegment("jungle/burned/16_3", 1)
+	confSegment("jungle/burned/16_4", 1)
 	
 	l = 0
 	
