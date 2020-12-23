@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 756.7486 220.01168"
@@ -12,7 +13,7 @@
    width="756.7486"
    id="svg64"
    version="1.1"
-   sodipodi:docname="ksamLogo.svg"
+   sodipodi:docname="ksamBeta.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    inkscape:export-filename="/home/user/Development/Mediocre/ksam-assets/textures/menu/ksamBeta.png"
    inkscape:export-xdpi="200"
@@ -50,12 +51,66 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs68" />
+     id="defs68">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient28">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop24" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="1"
+         id="stop26" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient28"
+       id="linearGradient30"
+       x1="502.36413"
+       y1="293.60274"
+       x2="688.64634"
+       y2="293.60274"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter54">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood44" />
+      <feComposite
+         in="SourceGraphic"
+         in2="flood"
+         operator="in"
+         result="composite1"
+         id="feComposite46" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur48" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset50" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite52" />
+    </filter>
+  </defs>
   <path
      id="path74"
      d="m 0.425708,100.67932 v 15.964 H 90.675804 V 99.827911 L 25.968186,50.020071 H 90.250094 V 34.268818 H 0 v 17.028335 l 65.346174,49.807837 z"
@@ -130,4 +185,16 @@
      y="-756.7486"
      ry="0"
      transform="rotate(90)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1%;font-family:'Titillium Web';-inkscape-font-specification:'Titillium Web';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient30);fill-opacity:1;stroke:none;stroke-width:1.79606;filter:url(#filter54)"
+     x="495.70813"
+     y="325.13339"
+     id="text22"
+     transform="rotate(-11.459156,-40.866577,5.9666447)"><tspan
+       sodipodi:role="line"
+       id="tspan20"
+       x="495.70813"
+       y="325.13339"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:85.3333px;font-family:Jost;-inkscape-font-specification:'Jost Medium';fill:url(#linearGradient30);stroke-width:1.79606">BETA</tspan></text>
 </svg>
