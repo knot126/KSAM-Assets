@@ -1,0 +1,12 @@
+{
+    "packageName": "knot126.beehive",
+    "packageTitle": {
+        "en": "Beehive PLUS"
+    },
+    "packageVersion": 40000,
+    "packageCreator": "Knot126",
+    "packageDate": "2021-02-28T23:45:22+00:00",
+    "description": {
+        "en": "A remastered version of Beehive."
+    }
+}
