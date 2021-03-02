@@ -3,7 +3,7 @@ function init()
 	pEnd = mgGetBool("end", true)
 	
 	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
-	mgMusic("25")
+	mgMusic("3")
 	mgParticles("lowrising")
 	
 	confSegment("beehive_plus/noteasy/16_0", 1)
