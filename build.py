@@ -78,4 +78,7 @@ def main(dest):
 	return 0
 
 if (__name__ == "__main__"):
-	sys.exit(main(sys.argv[1]))
+	if (len(sys.argv) >= 2):
+		sys.exit(main(sys.argv[1]))
+	else:
+		print("Usage: python3 ./build.py (location to apk root)")
