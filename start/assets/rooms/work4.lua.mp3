@@ -18,6 +18,10 @@ function init()
 		l = l + mgSegment(s, -l)
 	end
 	
+	if pEnd then
+		l = l + mgSegment("basic/door", -l)
+	end
+	
 	mgLength(l)
 end
 

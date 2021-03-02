@@ -1,12 +1,12 @@
 {
-    "packageName": "knot126.ksam.tests",
+    "packageName": "knot126.start",
     "packageTitle": {
-        "en": "ksam tests"
+        "en": "Knot126's Start"
     },
     "packageVersion": 10000,
     "packageCreator": "Knot126",
     "packageDate": "1970-01-01T00:00:00+00:00",
     "description": {
-        "en": "Test package for KSAM"
+        "en": "A new starting checkpoint for Smash Hit."
     }
 }
