@@ -13,12 +13,12 @@
    id="svg64"
    version="1.1"
    sodipodi:docname="ksamLogo.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   inkscape:export-filename="/home/user/Development/Mediocre/ksam-assets/textures/menu/ksamBeta.png"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="/home/user/Development/Misc/ksam-assets/textures/menu/ksamLogo.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#515151"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -34,14 +34,15 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="2.2742031"
+     inkscape:zoom="1"
      inkscape:cx="378.3743"
      inkscape:cy="110.00584"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg64"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="false" />
   <metadata
      id="metadata70">
     <rdf:RDF>
@@ -50,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -84,15 +85,17 @@
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.85993;stroke-miterlimit:4;stroke-dasharray:none" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1%;font-family:'Titillium Web';-inkscape-font-specification:'Titillium Web';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.79606;"
-     x="4.2309856"
-     y="217.7717"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1%;font-family:'Titillium Web';-inkscape-font-specification:'Titillium Web';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.79606"
+     x="376.58224"
+     y="219.37169"
      id="text21"><tspan
        sodipodi:role="line"
        id="tspan19"
-       x="4.2309856"
-       y="217.7717"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:64px;font-family:Jost;-inkscape-font-specification:'Jost Medium';fill:#ffffff;stroke-width:1.79606;">KNOT'S STAGES &amp; MODS</tspan></text>
+       x="376.58224"
+       y="219.37169"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:1.79606">KNOT'S UPDATE <tspan
+   style="fill:#de8787"
+   id="tspan20">BETA</tspan></tspan></text>
   <path
      id="path846"
      d="m 562.49819,116.87697 h 16.40564 V 50.802865 h 58.39807 v 66.375075 h 16.25514 V 34.397205 H 578.75332 V 1.5858835 h -16.40565 z"
