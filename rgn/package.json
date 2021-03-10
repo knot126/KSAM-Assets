@@ -1,0 +1,12 @@
+{
+    "packageName": "knot126.procedurally",
+    "packageTitle": {
+        "en": "Procedurally Generated Stages"
+    },
+    "packageVersion": 30001,
+    "packageCreator": "Knot126",
+    "packageDate": "2021-03-10T02:20:00+00:00",
+    "description": {
+        "en": "Provides the Procedurally Generated Stages room (rgn)."
+    }
+}

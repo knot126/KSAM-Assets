@@ -11,6 +11,7 @@ function init()
 	confSegment("beehive_plus/noteasy/16_2", 1)
 	confSegment("beehive_plus/noteasy/16_3", 1)
 	confSegment("beehive_plus/noteasy/16_4", 1)
+	confSegment("beehive_plus/noteasy/16_5", 1)
 	
 	l = 0
 	

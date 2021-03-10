@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 756.7486 220.01168"
+   height="220.01169"
+   width="756.7486"
+   id="svg64"
+   version="1.1"
+   sodipodi:docname="ksamLogoWiki.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="/home/user/Development/Misc/ksam-assets/textures/menu/ksamLogoWiki.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <sodipodi:namedview
+     pagecolor="#515151"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     id="namedview17"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1"
+     inkscape:cx="378.3743"
+     inkscape:cy="110.00584"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg64"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="false" />
+  <metadata
+     id="metadata70">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs68" />
+  <path
+     id="path74"
+     d="m 0.425708,100.67932 v 15.964 H 90.675804 V 99.827911 L 25.968186,50.020071 H 90.250094 V 34.268818 H 0 v 17.028335 l 65.346174,49.807837 z"
+     style="fill:#000000;stroke:none;stroke-width:0.85993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     id="path76"
+     d="m 108.2868,33.945742 v 82.780738 h 15.80361 V 50.200828 h 20.61994 l 12.79339,12.793438 12.49237,-12.492376 h 18.96432 v 65.92361 h 10.0842 l 16.40565,-16.40566 H 205.06506 V 34.09623 h -42.74499 l -4.96684,4.96687 -5.04211,-5.042114 z"
+     style="fill:#000000;stroke:none;stroke-width:0.85993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     id="path78"
+     d="m 281.82541,141.10919 h 15.95411 V 34.246717 H 281.37388 L 162.69635,152.92429 174.81245,165.04036 282.05117,57.801664 Z"
+     style="fill:#000000;stroke:none;stroke-width:0.85993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     style="fill:#000000;stroke:none;stroke-width:0.85993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 313.33702,100.46451 v 15.964 h 90.25009 V 99.613101 L 338.8795,49.80526 h 64.28191 V 34.054007 h -90.2501 v 17.028336 l 65.34618,49.807837 z"
+     id="path80" />
+  <path
+     id="path82"
+     d="m 419.84353,116.57599 h 16.40565 v -66.0741 h 58.39806 v 66.37508 h 16.25514 V 34.09623 H 436.09866 V 1.2849085 h -16.40564 z"
+     style="fill:#000000;stroke:none;stroke-width:0.85993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <circle
+     r="31.456694"
+     cy="109.05046"
+     cx="252.92737"
+     id="path84"
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.85993;stroke-miterlimit:4;stroke-dasharray:none" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1%;font-family:'Titillium Web';-inkscape-font-specification:'Titillium Web';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.79606;"
+     x="376.58224"
+     y="219.37169"
+     id="text21"><tspan
+       sodipodi:role="line"
+       id="tspan19"
+       x="376.58224"
+       y="219.37169"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';text-align:center;text-anchor:middle;fill:#000000;stroke-width:1.79606;">KNOT'S UPDATE</tspan></text>
+  <path
+     id="path846"
+     d="m 562.49819,116.87697 h 16.40564 V 50.802865 h 58.39807 v 66.375075 h 16.25514 V 34.397205 H 578.75332 V 1.5858835 h -16.40565 z"
+     style="fill:#000000;stroke:none;stroke-width:0.85993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <rect
+     style="fill:#000000;stroke:none;stroke-width:0.85993"
+     id="rect848"
+     width="16.255138"
+     height="82.780746"
+     x="671.6991"
+     y="34.397205"
+     ry="0" />
+  <rect
+     style="fill:#000000;stroke:none;stroke-width:0.373976"
+     id="rect850"
+     width="16.255138"
+     height="15.656313"
+     x="671.6991"
+     y="0"
+     ry="0" />
+  <rect
+     style="fill:#000000;stroke:none;stroke-width:1.0102"
+     id="rect852"
+     width="16.405636"
+     height="115.59205"
+     x="722.74786"
+     y="1.5858879"
+     ry="0" />
+  <rect
+     style="fill:#000000;stroke:none;stroke-width:0.67492"
+     id="rect854"
+     width="16.405636"
+     height="51.595806"
+     x="34.397205"
+     y="-756.7486"
+     ry="0"
+     transform="rotate(90)" />
+</svg>
