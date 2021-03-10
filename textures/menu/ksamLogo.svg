@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -93,9 +93,7 @@
        id="tspan19"
        x="376.58224"
        y="219.37169"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:1.79606">KNOT'S UPDATE <tspan
-   style="fill:#de8787"
-   id="tspan20">BETA</tspan></tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:1.79606">KNOT'S UPDATE</tspan></text>
   <path
      id="path846"
      d="m 562.49819,116.87697 h 16.40564 V 50.802865 h 58.39807 v 66.375075 h 16.25514 V 34.397205 H 578.75332 V 1.5858835 h -16.40565 z"
