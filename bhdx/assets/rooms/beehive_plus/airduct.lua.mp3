@@ -1,0 +1,36 @@
+function init()
+	pStart = mgGetBool("start", true)
+	pEnd = mgGetBool("end", true)
+	
+	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
+	mgMusic("18")
+	mgParticles("lowrising")
+	
+	confSegment("beehive_plus/airduct/16_0", 1)
+	confSegment("beehive_plus/airduct/16_1", 1)
+	confSegment("beehive_plus/airduct/16_2", 1)
+	confSegment("beehive_plus/airduct/16_3", 1)
+	confSegment("beehive_plus/airduct/16_4", 1)
+	confSegment("beehive_plus/airduct/16_5", 1)
+	
+	l = 0
+	
+	if pStart then
+		l = l + mgSegment("beehive_plus/airduct/spacer", -l)
+	end
+
+	local targetLen = 180 
+	while l < targetLen do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)	
+	end
+	
+	if pEnd then
+		l = l + mgSegment("beehive_plus/airduct/door", -l)
+	end
+	
+	mgLength(l)
+end
+
+function tick()
+end
