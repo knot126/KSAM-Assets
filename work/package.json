@@ -1,0 +1,12 @@
+{
+    "packageName": "knot126.ksam.work",
+    "packageTitle": {
+        "en": "KSAM Work Package"
+    },
+    "packageVersion": 10000,
+    "packageCreator": "Knot126",
+    "packageDate": "2020-01-01T00:00:00+00:00",
+    "description": {
+        "en": "Work!"
+    }
+}
