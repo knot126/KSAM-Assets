@@ -2,12 +2,13 @@ function init()
 	pStart = mgGetBool("start", true)
 	pEnd = mgGetBool("end", true)
 	
-	mgFogColor(0.95, 0.81, 0.43, 0.63, 0.52, 0.14)
-	mgMusic("0")
+	mgFogColor(0.82, 0.79, 0.93, 0.6, 0.5, 0.9)
+	mgMusic("5")
 	
 	confSegment("basic/16_0", 1)
 	confSegment("basic/16_1", 1)
 	confSegment("basic/16_2", 1)
+	confSegment("basic/16_3", 1)
 	
 	l = 0
 	
