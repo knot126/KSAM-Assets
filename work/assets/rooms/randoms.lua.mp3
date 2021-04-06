@@ -5,21 +5,13 @@ function init()
 	mgMusic("25")
 	mgFogColor(1.0, 1.0, 1.0, 0.8, 0.7, 0.6)
 	
-	confSegment("randoms", 1)
+	confSegment("1", 1)
 	
 	l = 0
-	
-	if pStart then
-		l = l + mgSegment("basic/basic/start", -l)	
-	end
 	
 	while l < 140 do
 		s = nextSegment()
 		l = l + mgSegment(s, -l)	
-	end
-	
-	if pEnd then 
-		l = l + mgSegment("basic/basic/door", -l)	
 	end
 	
 	gt = mgRandFloat()

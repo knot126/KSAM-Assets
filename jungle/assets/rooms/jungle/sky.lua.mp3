@@ -5,7 +5,7 @@ function init()
 	mgMusic("27")
 	mgReverb(0.2, 0.8, 0.3)
 	mgEcho(0.3, 0.2, 0.5, 0.5)
-	mgFogColor(0.83, 0.96, 1.0, 0.37, 0.73, 0.82)
+	mgFogColor(0.2, 0.2, 0.2, 0.2, 0.2, 0.2)
 	mgParticles("bubbles")
 	mgGravity(0.65)
 	

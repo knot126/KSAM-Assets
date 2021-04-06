@@ -5,8 +5,7 @@ function init()
 	mgMusic("33")
 	mgReverb(0.4, 1.0, 0.5)
 	mgEcho(0.3, 0.2, 0.5, 0.5)
-	mgFogColor(0.9882352941176471, 0.4666666666666667, 0.00784313725490196,
-	           0.8196078431372549, 0.2627450980392157, 0.00784313725490196)
+	mgFogColor(0.2, 0.2, 0.2, 0.2, 0.2, 0.2)
 	
 	confSegment("jungle/burned/16_0", 1)
 	confSegment("jungle/burned/16_1", 1)

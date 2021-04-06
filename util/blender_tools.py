@@ -25,7 +25,7 @@ bl_info = {
 	"name": "Knot Segment Tools",
 	"description": "Knot's personal version of Smash Hit Blender Tools",
 	"author": "Knot126",
-	"version": (1, 0, 0),
+	"version": (1, 0, 1),
 	"blender": (2, 92, 0),
 	"location": "File > Import/Export and 3D View > Tools",
 	"warning": "",
@@ -73,6 +73,9 @@ def sh_create_root(scene, params):
 	if (scene.sh_light[3] != 1.0): seg_props["lightBottom"] = str(scene.sh_light[3])
 	if (scene.sh_light[4] != 1.0): seg_props["lightFront"] = str(scene.sh_light[4])
 	if (scene.sh_light[5] != 1.0): seg_props["lightBack"] = str(scene.sh_light[5])
+	
+	if (scene.sh_lightfactor != 0.5):
+		seg_props["meshbake-legacy-light-factor"] = str(scene.sh_lightfactor)
 	
 	if (params["disable_lighting"]):
 		seg_props["meshbake-legacy-disable-lighting"] = "yes"
@@ -322,6 +325,7 @@ def sh_cookMesh041(seg, outfile):
 	mesh_vert_count = 0
 	mesh_index = b""
 	mesh = open(outfile, "wb")
+	light_factor = 0.5
 	
 	def add_vert(x, y, z, u, v, r, g, b, a):
 		"""
@@ -361,6 +365,7 @@ def sh_cookMesh041(seg, outfile):
 		Adds a cube
 		"""
 		nonlocal mesh_index
+		nonlocal light_factor # the multiply of the light to make sure it's not too bright
 		
 		# Calculate position for the texture coordinates
 		tile_u_offset = ((t % 8) + 1) / 8 - 0.125
@@ -512,6 +517,9 @@ def sh_cookMesh041(seg, outfile):
 	if (seg.attrib.get("meshbake-legacy-disable-lighting", "n") == "yes"):
 		light_multiply = (2.0, 2.0, 2.0, 2.0, 2.0, 2.0)
 	
+	if ("meshbake-legacy-light-factor" in seg.attrib):
+		light_factor = float(seg.attrib["meshbake-legacy-light-factor"])
+	
 	# Iterate through all the entities, and make boxes into meshes
 	for entity in seg:
 		if (entity.tag == "box"):
@@ -614,6 +622,14 @@ class sh_SceneProperties(PropertyGroup):
 		min = 0.0,
 		max = 2.0,
 		size = 6,
+		)
+	
+	sh_lightfactor: FloatProperty(
+		name = "Light Factor",
+		description = "Changes the way that light is multiplied so that things do not look too bright",
+		default = 0.5,
+		min = 0.333,
+		max = 1.0
 		)
 
 # Object (obstacle/powerup/decal/water) properties
@@ -847,6 +863,7 @@ class sh_SegmentPanel(Panel):
 		layout.prop(sh_properties, "sh_template")
 		layout.prop(sh_properties, "sh_softshadow")
 		layout.prop(sh_properties, "sh_light")
+		layout.prop(sh_properties, "sh_lightfactor")
 		layout.separator()
 
 class sh_ObstaclePanel(Panel):

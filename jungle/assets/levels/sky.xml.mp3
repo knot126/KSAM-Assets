@@ -1,1 +1,1 @@
-<level>	<room type="jungle/sky0" length="300" start="true" end="false"/>	<room type="jungle/sky0" length="300" start="false" end="true"/>	<room type="jungle/burned" length="300" start="true" end="false"/>	<room type="jungle/burned" length="300" start="false" end="true"/></level>
+<level>	<room type="jungle/sky" length="300" start="true" end="false"/>	<room type="jungle/sky" length="300" start="false" end="true"/>	<room type="jungle/burned" length="300" start="true" end="false"/>	<room type="jungle/burned" length="300" start="false" end="true"/></level>
