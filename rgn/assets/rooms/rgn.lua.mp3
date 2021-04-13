@@ -105,77 +105,80 @@ function initGlobals()
 			local y = 0.0;
 			local thic = mgRndFloat(0.08, 0.14)
 			local rad = thic + mgRndFloat(0.08, 0.14);
-			mgObstacle("3dcross", x, y, z, gen.color(), "size=" .. mgRndFloat(0.5, 2.0), "thickness=" .. thic, "radius=" .. rad)
+			mgObstacle("3dcross", x, y, z, gen.colour(), "size=" .. mgRndFloat(0.5, 2.0), "thickness=" .. thic, "radius=" .. rad)
 		end},
 		-----
 		{name = "sidesweeper", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = 0.0;
-			mgObstace("sidesweeper", x, y, z, gen.color(), "width=" .. mgRndFloat(1.5, 2.5))
+			mgObstace("sidesweeper", x, y, z, gen.colour(), "width=" .. mgRndFloat(1.5, 2.5))
 		end},
 		-----
 		{name = "bar", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = 1.0;
-			mgObstacle("bar", x, y, z, gen.color(), "thickness=" .. mgRndFloat(0.08, 0.16), "height=" .. mgRndFloat(0.06, 0.24), "blocker=" .. gen.rnd_bool(), "move=" .. mgRndInt(0, 1), "offset=" .. mgRndFloat(0.0, 30.0), "speed=" .. mgRndFloat(0.5, 2.0), "maxwidth=24")
+			mgObstacle("bar", x, y, z, gen.colour(), "thickness=" .. mgRndFloat(0.10, 0.14), "height=" .. mgRndFloat(0.06, 0.24), "blocker=" .. gen.rnd_bool(), "move=" .. mgRndInt(0, 1), "offset=" .. mgRndFloat(0.0, 30.0), "speed=" .. mgRndFloat(0.5, 1.5), "maxwidth=24")
 		end},
 		-----
 		{name = "suspendcube", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = mgRndFloat(0.6, 1.0);
-			mgObstacle("suspendcube", x, y, z, gen.color(), "width=" .. mgRndFloat(1.0, 2.5), "height=" .. mgRndFloat(1.0, 2.5), "depth=" .. mgRndFloat(0.2, 0.4))
+			mgObstacle("suspendcube", x, y, z, gen.colour(), "width=" .. mgRndFloat(1.0, 2.5), "height=" .. mgRndFloat(1.0, 2.5), "depth=" .. mgRndFloat(0.2, 0.4))
 		end},
 		-----
 		{name = "dna", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = 1.0;
-			mgObstacle("dna", x, y, z, gen.color(), "thickness=" .. mgRndFloat(0.04, 0.06), "segments=" .. mgRndInt(12, 18))
+			mgObstacle("dna", x, y, z, gen.colour(), "segments=" .. mgRndInt(12, 18))
 		end},
 		-----
 		{name = "laser", mode = -2,
 		spawn = function(z)
 			local x = -room.width+0.5;
 			local y = 1.0;
-			mgObstacle("laser", x, y, z, "beams=" .. mgRndInt(1, 8), "move=" .. mgRndInt(0, 1), "speed=" .. mgRndFloat(0.1, 0.4))
+			mgObstacle("laser", x, y, z, "beams=" .. mgRndInt(1, 8), "move=" .. mgRndInt(0, 1), "speed=" .. mgRndFloat(0.15, 0.35))
 		end},
 		-----
 		{name = "suspendcylinder", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = 1.0;
-			mgObstacle("suspendcylinder", x, y, z, gen.color(), "width=" .. mgRndFloat(3.0, 4.5))
+			mgObstacle("suspendcylinder", x, y, z, gen.colour(), "width=" .. mgRndFloat(3.0, 4.5))
 		end},
 		-----
 		{name = "beatwindow", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = 0.0;
-			mgObstalce("beatwindow", x, y, z, gen.color(), "offset=" .. mgRndFloat(0.0, 30.0), "beat=" .. mgRndFloat(1.0, 3.0), "width=" .. mgRndFloat(3.0, 5.0))
+			mgObstalce("beatwindow", x, y, z, gen.colour(), "offset=" .. mgRndFloat(0.0, 30.0), "beat=" .. mgRndFloat(1.0, 3.0), "width=" .. mgRndFloat(3.0, 5.0))
 		end},
 		-----
 		{name = "bigcrank", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = 1.0;
-			mgObstacle("bigcrank", x, y, z, gen.color(), "thickness=" .. mgRndFloat(0.08, 0.12), "height=" .. mgRndFloat(0.5, 2.0), "offset=" .. mgRndFloat(0.0, 30.0))
+			mgObstacle("bigcrank", x, y, z, gen.colour(), "thickness=" .. mgRndFloat(0.08, 0.12), "height=" .. mgRndFloat(0.5, 2.0), "offset=" .. mgRndFloat(0.0, 30.0))
 		end},
 		-----
 		{name = "pyramid", mode = -2,
 		spawn = function(z)
 			local x = 0.0;
 			local y = room.floorDistance+0.5;
-			mgObstacle("pyramid", x, y, z, gen.color(), "levels=" .. mgRndInt(3, 6), "size=" .. mgRndFloat(0.18, 0.24), "material=" .. getRndFrom(config.materials))
+			mgObstacle("pyramid", x, y, z, gen.colour(), "levels=" .. mgRndInt(3, 6), "size=" .. mgRndFloat(0.18, 0.24), "material=" .. getRndFrom(config.materials))
+			if not room.enableFloor then
+				createBox({2.0, 2.0, 0.5}, {x, y - 1.0, z})
+			end
 		end},
 		-----
 		{name = "bigpendulum", mode = -2,
 		spawn = function(z)
 			local x = 0;
 			local y = 0.5;
-			mgObstacle("bigpendulum", x, y, z, gen.color(), "dinglare=" .. gen.rnd_bool(), "followbeat=" .. gen.rnd_bool())
+			mgObstacle("bigpendulum", x, y, z, gen.colour(), "dinglare=" .. gen.rnd_bool(), "followbeat=" .. gen.rnd_bool())
 		end},
 		-----
 		{name = "rotor", mode = -2, 
@@ -183,7 +186,7 @@ function initGlobals()
 			local x = 0;
 			local y = getRndFrom({2.0, -1.0});
 			mgObstacle("rotor", x, y, z,
-			           gen.color(), 
+			           gen.colour(), 
 			           "length=" .. mgRndFloat(0.5, 3.0), 
 			           "arms=" .. mgRndInt(2, 6), 
 			           "endplate=" .. gen.rnd_bool(), 
@@ -194,14 +197,14 @@ function initGlobals()
 		spawn = function(z)
 			local x = 0.0;
 			local y = room.floorDistance+0.5;
-			mgObstacle("cactus", x, y, z, gen.color(), "scale=" .. mgRndFloat(0.8, 1.2), "thickness=" .. mgRndFloat(0.09, 0.11))
+			mgObstacle("cactus", x, y, z, gen.colour(), "scale=" .. mgRndFloat(0.8, 1.2), "thickness=" .. mgRndFloat(0.09, 0.11))
 		end},
 		-----
 		{name = "gyro", mode = -2,
 		spawn = function(z)
 			local x = 0.0
 			local y = 1.0
-			mgObstacle("gyro", x, y, z, gen.color(), "glass=" .. gen.rnd_bool(), "hexagon=" .. gen.rnd_bool(), "hollow=" .. gen.rnd_bool())
+			mgObstacle("gyro", x, y, z, gen.colour(), "glass=" .. gen.rnd_bool(), "hexagon=" .. gen.rnd_bool(), "hollow=" .. gen.rnd_bool())
 		end},
 	}
 	
@@ -319,11 +322,11 @@ end
 
 -- obstacle ease-of-use functions
 
-function gen.color()
+function gen.colour()
 	return "color=" .. getGlassColor()
 end
 
-function gen.wall_color()
+function gen.wall_colour()
 	return "color=" .. getWallColor()
 end
 

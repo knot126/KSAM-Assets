@@ -38,7 +38,6 @@ import xml.etree.ElementTree as et
 import bpy
 import bpy_extras
 import gzip
-import json
 import os.path as ospath
 
 # Needed for mesh baking, if not already imported
